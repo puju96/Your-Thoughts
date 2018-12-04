@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>1041582019693-gei30tjgs4idqseb45pnpf69d1aksnv1.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.1041582019693-gei30tjgs4idqseb45pnpf69d1aksnv1</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDHVH5dZqTyGca2p44JiUhay38RCKS_XN0</string>
+	<key>GCM_SENDER_ID</key>
+	<string>1041582019693</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>-23.yourThoughts</string>
+	<key>PROJECT_ID</key>
+	<string>thoughts-f24d0</string>
+	<key>STORAGE_BUCKET</key>
+	<string>thoughts-f24d0.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true></true>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false></false>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:1041582019693:ios:dc40fa2e52d57ff4</string>
+	<key>DATABASE_URL</key>
+	<string>https://thoughts-f24d0.firebaseio.com</string>
+</dict>
+</plist>
