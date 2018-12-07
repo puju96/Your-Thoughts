@@ -15,6 +15,12 @@
 		187A1E8B21B658D400865ABC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 187A1E8A21B658D400865ABC /* GoogleService-Info.plist */; };
 		187A1E9021B65CBE00865ABC /* createThoughtVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187A1E8F21B65CBE00865ABC /* createThoughtVC.swift */; };
 		187A1E9321B6761700865ABC /* constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187A1E9221B6761700865ABC /* constants.swift */; };
+		187A1E9721B6895000865ABC /* Dataservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187A1E9621B6895000865ABC /* Dataservice.swift */; };
+		187A1E9921B6899300865ABC /* thoughtCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187A1E9821B6899300865ABC /* thoughtCell.swift */; };
+		187A1E9B21B689AB00865ABC /* Thought.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187A1E9A21B689AB00865ABC /* Thought.swift */; };
+		187A1E9D21B7C5DC00865ABC /* loginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187A1E9C21B7C5DC00865ABC /* loginVC.swift */; };
+		187A1E9F21B7C5F000865ABC /* createUserVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187A1E9E21B7C5F000865ABC /* createUserVC.swift */; };
+		187A1EA121B7C9BF00865ABC /* SplashActivity.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 187A1EA021B7C9BF00865ABC /* SplashActivity.storyboard */; };
 		6A91180EE0E0F317746631CB /* Pods_yourThoughts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6863EE55A2C835314692EC8 /* Pods_yourThoughts.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +35,12 @@
 		187A1E8A21B658D400865ABC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		187A1E8F21B65CBE00865ABC /* createThoughtVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = createThoughtVC.swift; sourceTree = "<group>"; };
 		187A1E9221B6761700865ABC /* constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = constants.swift; sourceTree = "<group>"; };
+		187A1E9621B6895000865ABC /* Dataservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dataservice.swift; sourceTree = "<group>"; };
+		187A1E9821B6899300865ABC /* thoughtCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = thoughtCell.swift; sourceTree = "<group>"; };
+		187A1E9A21B689AB00865ABC /* Thought.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thought.swift; sourceTree = "<group>"; };
+		187A1E9C21B7C5DC00865ABC /* loginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginVC.swift; sourceTree = "<group>"; };
+		187A1E9E21B7C5F000865ABC /* createUserVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = createUserVC.swift; sourceTree = "<group>"; };
+		187A1EA021B7C9BF00865ABC /* SplashActivity.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SplashActivity.storyboard; sourceTree = "<group>"; };
 		38E37CD9B66D9618E2F2C50A /* Pods-yourThoughts.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yourThoughts.release.xcconfig"; path = "Pods/Target Support Files/Pods-yourThoughts/Pods-yourThoughts.release.xcconfig"; sourceTree = "<group>"; };
 		7E2B11D7402620A2C10C19E3 /* Pods-yourThoughts.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yourThoughts.debug.xcconfig"; path = "Pods/Target Support Files/Pods-yourThoughts/Pods-yourThoughts.debug.xcconfig"; sourceTree = "<group>"; };
 		F6863EE55A2C835314692EC8 /* Pods_yourThoughts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_yourThoughts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -67,6 +79,7 @@
 		187A1E7521B64DAC00865ABC /* yourThoughts */ = {
 			isa = PBXGroup;
 			children = (
+				187A1E9521B6893000865ABC /* services */,
 				187A1E9121B675FA00865ABC /* utilities */,
 				187A1E8E21B65B7D00865ABC /* views */,
 				187A1E8D21B65B7500865ABC /* models */,
@@ -77,6 +90,7 @@
 				187A1E7F21B64DAD00865ABC /* LaunchScreen.storyboard */,
 				187A1E8221B64DAD00865ABC /* Info.plist */,
 				187A1E8A21B658D400865ABC /* GoogleService-Info.plist */,
+				187A1EA021B7C9BF00865ABC /* SplashActivity.storyboard */,
 			);
 			path = yourThoughts;
 			sourceTree = "<group>";
@@ -86,6 +100,8 @@
 			children = (
 				187A1E7821B64DAC00865ABC /* mainVC.swift */,
 				187A1E8F21B65CBE00865ABC /* createThoughtVC.swift */,
+				187A1E9C21B7C5DC00865ABC /* loginVC.swift */,
+				187A1E9E21B7C5F000865ABC /* createUserVC.swift */,
 			);
 			path = contoller;
 			sourceTree = "<group>";
@@ -93,6 +109,7 @@
 		187A1E8D21B65B7500865ABC /* models */ = {
 			isa = PBXGroup;
 			children = (
+				187A1E9A21B689AB00865ABC /* Thought.swift */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -100,6 +117,7 @@
 		187A1E8E21B65B7D00865ABC /* views */ = {
 			isa = PBXGroup;
 			children = (
+				187A1E9821B6899300865ABC /* thoughtCell.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -110,6 +128,14 @@
 				187A1E9221B6761700865ABC /* constants.swift */,
 			);
 			path = utilities;
+			sourceTree = "<group>";
+		};
+		187A1E9521B6893000865ABC /* services */ = {
+			isa = PBXGroup;
+			children = (
+				187A1E9621B6895000865ABC /* Dataservice.swift */,
+			);
+			path = services;
 			sourceTree = "<group>";
 		};
 		234EE8D2A1D5779A6B9F560A /* Pods */ = {
@@ -192,6 +218,7 @@
 				187A1E8121B64DAD00865ABC /* LaunchScreen.storyboard in Resources */,
 				187A1E8B21B658D400865ABC /* GoogleService-Info.plist in Resources */,
 				187A1E7E21B64DAD00865ABC /* Assets.xcassets in Resources */,
+				187A1EA121B7C9BF00865ABC /* SplashActivity.storyboard in Resources */,
 				187A1E7C21B64DAC00865ABC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -225,6 +252,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-yourThoughts/Pods-yourThoughts-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
 				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
@@ -238,6 +266,7 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
@@ -261,8 +290,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				187A1E9021B65CBE00865ABC /* createThoughtVC.swift in Sources */,
+				187A1E9921B6899300865ABC /* thoughtCell.swift in Sources */,
+				187A1E9D21B7C5DC00865ABC /* loginVC.swift in Sources */,
+				187A1E9F21B7C5F000865ABC /* createUserVC.swift in Sources */,
 				187A1E7921B64DAC00865ABC /* mainVC.swift in Sources */,
 				187A1E7721B64DAC00865ABC /* AppDelegate.swift in Sources */,
+				187A1E9721B6895000865ABC /* Dataservice.swift in Sources */,
+				187A1E9B21B689AB00865ABC /* Thought.swift in Sources */,
 				187A1E9321B6761700865ABC /* constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

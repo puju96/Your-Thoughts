@@ -35,7 +35,7 @@ class createThoughtVC: UIViewController  {
     
 
     @IBAction func postBtnTapped(_ sender: Any) {
-        DB_REF.collection("Thoughts").addDocument(data: [
+        DB_REF.collection(THOUGHTS_REF).addDocument(data: [
             CAT_FIELD : selectedCategory ,
             THOUGHT_FILED : thoughtTxt.text,
             LIKES_FIELD : 0,
@@ -58,14 +58,12 @@ class createThoughtVC: UIViewController  {
     @IBAction func categorySelected(_ sender: Any) {
         switch segmentCategory.selectedSegmentIndex {
         case 0:
-            selectedCategory = "funny"
+            selectedCategory = ThoughtCategory.funny.rawValue
         case 1:
-            selectedCategory = "serious"
-        case 2:
-            selectedCategory = "crazy"
+            selectedCategory = ThoughtCategory.serious.rawValue
         
         default:
-            selectedCategory = "popular"
+            selectedCategory = ThoughtCategory.crazy.rawValue
         }
     }
 }
