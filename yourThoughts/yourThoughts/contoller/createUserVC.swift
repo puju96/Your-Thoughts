@@ -44,19 +44,23 @@ class createUserVC: UIViewController {
             
             guard let userId = user?.uid  else { return }
             
-            Firestore.firestore().collection(USER_REF).document(userId).setData([ USER_FILED : username,
+            Firestore.firestore().collection(USER_REF).document(userId).setData([ USER_FILED : username!,
                 DATE_CREATED : FieldValue.serverTimestamp()
                             ],
                 completion: { (error) in
                 if let error = error {
                     debugPrint(error)
                 }
+                else {
+                    self.dismiss(animated: true, completion: nil)
+                    }
             })
         }
         
     }
     
     @IBAction func cancelBtnTapped(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
     }
     
 

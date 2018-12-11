@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1802455D21BA6EA7005C01D8 /* commentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1802455C21BA6EA7005C01D8 /* commentVC.swift */; };
+		1802455F21BA6ED3005C01D8 /* commentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1802455E21BA6ED3005C01D8 /* commentCell.swift */; };
+		1802456121BA6EE6005C01D8 /* comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1802456021BA6EE6005C01D8 /* comment.swift */; };
 		187A1E7721B64DAC00865ABC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187A1E7621B64DAC00865ABC /* AppDelegate.swift */; };
 		187A1E7921B64DAC00865ABC /* mainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187A1E7821B64DAC00865ABC /* mainVC.swift */; };
 		187A1E7C21B64DAC00865ABC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 187A1E7A21B64DAC00865ABC /* Main.storyboard */; };
@@ -15,16 +18,20 @@
 		187A1E8B21B658D400865ABC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 187A1E8A21B658D400865ABC /* GoogleService-Info.plist */; };
 		187A1E9021B65CBE00865ABC /* createThoughtVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187A1E8F21B65CBE00865ABC /* createThoughtVC.swift */; };
 		187A1E9321B6761700865ABC /* constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187A1E9221B6761700865ABC /* constants.swift */; };
-		187A1E9721B6895000865ABC /* Dataservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187A1E9621B6895000865ABC /* Dataservice.swift */; };
 		187A1E9921B6899300865ABC /* thoughtCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187A1E9821B6899300865ABC /* thoughtCell.swift */; };
 		187A1E9B21B689AB00865ABC /* Thought.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187A1E9A21B689AB00865ABC /* Thought.swift */; };
 		187A1E9D21B7C5DC00865ABC /* loginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187A1E9C21B7C5DC00865ABC /* loginVC.swift */; };
 		187A1E9F21B7C5F000865ABC /* createUserVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187A1E9E21B7C5F000865ABC /* createUserVC.swift */; };
 		187A1EA121B7C9BF00865ABC /* SplashActivity.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 187A1EA021B7C9BF00865ABC /* SplashActivity.storyboard */; };
+		18FDE9D121BE7EA00045E293 /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FDE9D021BE7EA00045E293 /* extensions.swift */; };
+		18FDE9D421BFB5890045E293 /* updateCommentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FDE9D321BFB5890045E293 /* updateCommentVC.swift */; };
 		6A91180EE0E0F317746631CB /* Pods_yourThoughts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6863EE55A2C835314692EC8 /* Pods_yourThoughts.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1802455C21BA6EA7005C01D8 /* commentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = commentVC.swift; sourceTree = "<group>"; };
+		1802455E21BA6ED3005C01D8 /* commentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = commentCell.swift; sourceTree = "<group>"; };
+		1802456021BA6EE6005C01D8 /* comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = comment.swift; sourceTree = "<group>"; };
 		187A1E7321B64DAC00865ABC /* yourThoughts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = yourThoughts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		187A1E7621B64DAC00865ABC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		187A1E7821B64DAC00865ABC /* mainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainVC.swift; sourceTree = "<group>"; };
@@ -35,12 +42,13 @@
 		187A1E8A21B658D400865ABC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		187A1E8F21B65CBE00865ABC /* createThoughtVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = createThoughtVC.swift; sourceTree = "<group>"; };
 		187A1E9221B6761700865ABC /* constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = constants.swift; sourceTree = "<group>"; };
-		187A1E9621B6895000865ABC /* Dataservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dataservice.swift; sourceTree = "<group>"; };
 		187A1E9821B6899300865ABC /* thoughtCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = thoughtCell.swift; sourceTree = "<group>"; };
 		187A1E9A21B689AB00865ABC /* Thought.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thought.swift; sourceTree = "<group>"; };
 		187A1E9C21B7C5DC00865ABC /* loginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginVC.swift; sourceTree = "<group>"; };
 		187A1E9E21B7C5F000865ABC /* createUserVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = createUserVC.swift; sourceTree = "<group>"; };
 		187A1EA021B7C9BF00865ABC /* SplashActivity.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SplashActivity.storyboard; sourceTree = "<group>"; };
+		18FDE9D021BE7EA00045E293 /* extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
+		18FDE9D321BFB5890045E293 /* updateCommentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = updateCommentVC.swift; sourceTree = "<group>"; };
 		38E37CD9B66D9618E2F2C50A /* Pods-yourThoughts.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yourThoughts.release.xcconfig"; path = "Pods/Target Support Files/Pods-yourThoughts/Pods-yourThoughts.release.xcconfig"; sourceTree = "<group>"; };
 		7E2B11D7402620A2C10C19E3 /* Pods-yourThoughts.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yourThoughts.debug.xcconfig"; path = "Pods/Target Support Files/Pods-yourThoughts/Pods-yourThoughts.debug.xcconfig"; sourceTree = "<group>"; };
 		F6863EE55A2C835314692EC8 /* Pods_yourThoughts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_yourThoughts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -79,7 +87,6 @@
 		187A1E7521B64DAC00865ABC /* yourThoughts */ = {
 			isa = PBXGroup;
 			children = (
-				187A1E9521B6893000865ABC /* services */,
 				187A1E9121B675FA00865ABC /* utilities */,
 				187A1E8E21B65B7D00865ABC /* views */,
 				187A1E8D21B65B7500865ABC /* models */,
@@ -102,6 +109,8 @@
 				187A1E8F21B65CBE00865ABC /* createThoughtVC.swift */,
 				187A1E9C21B7C5DC00865ABC /* loginVC.swift */,
 				187A1E9E21B7C5F000865ABC /* createUserVC.swift */,
+				1802455C21BA6EA7005C01D8 /* commentVC.swift */,
+				18FDE9D321BFB5890045E293 /* updateCommentVC.swift */,
 			);
 			path = contoller;
 			sourceTree = "<group>";
@@ -110,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				187A1E9A21B689AB00865ABC /* Thought.swift */,
+				1802456021BA6EE6005C01D8 /* comment.swift */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -118,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				187A1E9821B6899300865ABC /* thoughtCell.swift */,
+				1802455E21BA6ED3005C01D8 /* commentCell.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -126,16 +137,9 @@
 			isa = PBXGroup;
 			children = (
 				187A1E9221B6761700865ABC /* constants.swift */,
+				18FDE9D021BE7EA00045E293 /* extensions.swift */,
 			);
 			path = utilities;
-			sourceTree = "<group>";
-		};
-		187A1E9521B6893000865ABC /* services */ = {
-			isa = PBXGroup;
-			children = (
-				187A1E9621B6895000865ABC /* Dataservice.swift */,
-			);
-			path = services;
 			sourceTree = "<group>";
 		};
 		234EE8D2A1D5779A6B9F560A /* Pods */ = {
@@ -291,13 +295,17 @@
 			files = (
 				187A1E9021B65CBE00865ABC /* createThoughtVC.swift in Sources */,
 				187A1E9921B6899300865ABC /* thoughtCell.swift in Sources */,
+				1802455F21BA6ED3005C01D8 /* commentCell.swift in Sources */,
 				187A1E9D21B7C5DC00865ABC /* loginVC.swift in Sources */,
 				187A1E9F21B7C5F000865ABC /* createUserVC.swift in Sources */,
+				1802455D21BA6EA7005C01D8 /* commentVC.swift in Sources */,
 				187A1E7921B64DAC00865ABC /* mainVC.swift in Sources */,
+				18FDE9D121BE7EA00045E293 /* extensions.swift in Sources */,
 				187A1E7721B64DAC00865ABC /* AppDelegate.swift in Sources */,
-				187A1E9721B6895000865ABC /* Dataservice.swift in Sources */,
 				187A1E9B21B689AB00865ABC /* Thought.swift in Sources */,
+				18FDE9D421BFB5890045E293 /* updateCommentVC.swift in Sources */,
 				187A1E9321B6761700865ABC /* constants.swift in Sources */,
+				1802456121BA6EE6005C01D8 /* comment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

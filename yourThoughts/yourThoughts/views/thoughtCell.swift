@@ -8,9 +8,20 @@
 
 import UIKit
 import Firebase
+import FirebaseAuth
+
+//when we click on option button then altert should come for that we need delegate
+
+protocol thoughtDelegate {
+    func thoughtOptionTapped(thought :Thought)
+}
+
 class thoughtCell: UITableViewCell {
 
+    @IBOutlet weak var optionMenu: UIImageView!
+    @IBOutlet weak var commentNum: UILabel!
     @IBOutlet weak var nameTxt: UILabel!
+    @IBOutlet weak var commentImg: UIImageView!
     
     @IBOutlet weak var timeTxt: UILabel!
     
@@ -20,6 +31,7 @@ class thoughtCell: UITableViewCell {
     @IBOutlet weak var likesnum: UILabel!
     
     private var thought : Thought!
+    private var delegate : thoughtDelegate?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -36,16 +48,31 @@ class thoughtCell: UITableViewCell {
         
     }
     
-    func configureCell (thought : Thought){
+    func configureCell (thought : Thought , delegate :thoughtDelegate){
+        optionMenu.isHidden = true
         self.thought = thought
+        self.delegate = delegate
         nameTxt.text = thought.username
         thoughtTxt.text = thought.thoughtMsg
         likesnum.text = String(thought.likes)
+        commentNum.text = String(thought.comments)
         
         let formatter = DateFormatter()
         formatter.dateFormat = "MMM d, hh:mm"
         let timestamp = formatter.string(from: thought.timestamp)
         timeTxt.text = timestamp
+        
+        if thought.userId == Auth.auth().currentUser?.uid{
+            optionMenu.isHidden = false
+            let tap = UITapGestureRecognizer(target: self, action: #selector(thoughtoptionTapped))
+            optionMenu.isUserInteractionEnabled = true
+            optionMenu.addGestureRecognizer(tap)
+        }
+    }
+    
+    @objc func thoughtoptionTapped() {
+        delegate?.thoughtOptionTapped(thought: thought)
+        
     }
     
 }

@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import FirebaseAuth
 
 let DB_REF = Firestore.firestore()
 
@@ -41,7 +42,8 @@ class createThoughtVC: UIViewController  {
             LIKES_FIELD : 0,
             COMMENTS_FIELD : 0,
             TIMESTAMP_FIELD : FieldValue.serverTimestamp(),
-            USER_FILED : usernameTxt.text
+            USER_FILED : usernameTxt.text ?? "Anoynmus",
+            USER_ID: Auth.auth().currentUser?.uid ?? ""
                  ]) { (error) in
             
             if let error = error {

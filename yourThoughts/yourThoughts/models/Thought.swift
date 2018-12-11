@@ -17,9 +17,11 @@ class Thought {
     private (set) public var thoughtMsg : String!
     private (set) public var likes : Int!
     private (set) public var comments : Int!
+    private(set) public var userId : String!
     
-    init(documentId : String , name: String, time : Date , thought : String, likesNum : Int , commentsNum : Int) {
+    init(documentId : String ,userId: String, name: String, time : Date , thought : String, likesNum : Int , commentsNum : Int) {
         self.documentId = documentId
+        self.userId = userId
         self.username = name
         self.timestamp = time
         self.thoughtMsg = thought
@@ -40,8 +42,9 @@ class Thought {
             let category = data[CAT_FIELD] as? String ?? ""
             let time = data[TIMESTAMP_FIELD] as? Date ?? Date()
             let documentId = document.documentID
+            let userId = data[USER_ID] as? String ?? ""
             
-            let newThought = Thought(documentId : documentId, name: name, time: time, thought: thought, likesNum: like, commentsNum: comment)
+            let newThought = Thought(documentId : documentId,userId : userId ,name: name, time: time, thought: thought, likesNum: like, commentsNum: comment)
             thoughtArray.append(newThought)
         }
         return thoughtArray
